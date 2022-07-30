@@ -17,7 +17,7 @@ class DockerGreetingAppTests {
 	}
 
 	@Test
-	private void greetTest() throws Exception{
+	void greetTest() throws Exception{
 		assertThat(greetingController).isNotNull();
 	}
 }

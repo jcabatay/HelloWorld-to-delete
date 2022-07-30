@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping ( value = "/hellodocker/v1")
 public class GreetingController {
 
+
     @GetMapping(value = "/greet/{name}")
     public ResponseEntity <String> greet(@PathVariable("name") String  name){
         return new ResponseEntity<>("Hello " + name, HttpStatus.OK);
